@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Loja</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo à Minha Loja</h1>
+    <div id="login-form">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="main-content" style="display: none;">
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showProducts()">Produtos</a></li>
+          <li><a href="#" onclick="showSpecificProduct()">Produto Específico</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
